@@ -1,0 +1,63 @@
+.fristview {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+
+    display: flex;
+    justify-content: space-between;
+
+    @include sp {
+        display: block;
+        background-image: url(../img/img1.png);
+        background-size: cover;
+    }
+
+    &-copy {
+        position: absolute;
+        top: 50%;
+        left: 12.5%;
+        height: 25%;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+
+        @include sp {
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column-reverse;
+            color: #ffffff;
+
+            top: 50%;
+            left: 25%;
+            height: 15%;
+        }
+
+        .catch {
+            @include sp {
+                font-size: 2.0rem;
+                text-shadow: 5px 1px 9px black;
+            }
+        }
+
+        p {
+            font-size: 4.0rem;
+            font-family: 'Zapfino', 'Segoe Script';
+            transform: translate(-10%, 0);
+
+            @include sp {
+                font-size: 2.8rem;
+                text-shadow: 5px 1px 9px black;
+            }
+        }
+
+    }
+
+    &-imge {
+        position: relative;
+        left: 50%;
+        width: 50%;
+        background-image: url(../img/img1.png);
+        background-size: cover;
+    }
+
+}
