@@ -1,3 +1,2 @@
 # codevillage
-codwvillageの事前課題
-codevillage
+codevillageの事前課題
