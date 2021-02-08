@@ -24,7 +24,7 @@ header {
     }
 
     &-nav {
-        width: 40%;
+        // width: 40%;
         line-height: normal;
         letter-spacing: normal;
 
@@ -33,10 +33,10 @@ header {
         }
 
         ul {
-            display: flex;
-            justify-content: space-between;
+            // display: flex;
+            // justify-content: space-between;
             align-items: flex-end;
-            margin-left: 15px;
+            // margin-left: 20px;
             color: #707070;
         }
     }
@@ -44,7 +44,7 @@ header {
 }
 
 .header-nav li {
-
+    margin-left: 20px;
     display: inline-block;
     padding-bottom: 4px;
     position: relative;
@@ -81,11 +81,11 @@ header {
             display: inline-block;
             width: 80%;
             height: 2px;
-            background-color:black;
-        
-        &:last-child {
-            width: 50%;
-        }
+            background-color: black;
+
+            &:last-child {
+                width: 50%;
+            }
         }
     }
 }

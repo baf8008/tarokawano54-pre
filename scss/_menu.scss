@@ -42,10 +42,15 @@
     }
 
     &__info {
-        font-size: 1.4rem;
-        line-height: 2;
+        font-size: 1.6rem;
+        line-height: 2.0;
+        letter-spacing: 2.5px;
         margin-top: 34px;
         text-align: left;
+
+        @include sp {
+            letter-spacing: 0.5px;
+        }
     }
 
     &__price {

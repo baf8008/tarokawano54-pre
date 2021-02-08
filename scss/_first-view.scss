@@ -1,5 +1,5 @@
 .fristview {
-    height: 100vh;
+    height: 800px;
     width: 100%;
     position: relative;
 
@@ -7,14 +7,12 @@
     justify-content: space-between;
 
     @include sp {
-        display: block;
-        background-image: url(../img/img1.png);
-        background-size: cover;
+        height: 600px;
     }
 
     &-copy {
         position: absolute;
-        top: 50%;
+        top: 40%;
         left: 12.5%;
         height: 25%;
         display: flex;
@@ -26,15 +24,17 @@
             justify-content: space-between;
             flex-direction: column-reverse;
             color: #ffffff;
+            z-index: 1;
 
-            top: 50%;
-            left: 25%;
-            height: 15%;
+            top: 35%;
+            left: 18%;
+            height: 10%;
+            width: 100%;
         }
 
         .catch {
             @include sp {
-                font-size: 2.0rem;
+                font-size: 2.3rem;
                 text-shadow: 5px 1px 9px black;
             }
         }
@@ -42,7 +42,7 @@
         p {
             font-size: 4.0rem;
             font-family: 'Zapfino', 'Segoe Script';
-            transform: translate(-10%, 0);
+            transform: translate(-10%, -90%);
 
             @include sp {
                 font-size: 2.8rem;
@@ -54,10 +54,19 @@
 
     &-imge {
         position: relative;
-        left: 50%;
-        width: 50%;
+        left: 47.5%;
+        width: 55%;
         background-image: url(../img/img1.png);
         background-size: cover;
+
+
+        @include sp {
+            display: block;
+            left: 0;
+            width: 100%;
+            height: 600px;
+
+        }
     }
 
 }

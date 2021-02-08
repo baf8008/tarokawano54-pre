@@ -14,8 +14,9 @@
 
 .address__contener {
     background-color: #D0C5BA;
-    padding: 100px 149px 100px 100px;
+    padding: 100px 209px 100px 100px;
     text-align: left;
+    letter-spacing: 1.0px;
 
     @include sp {
         padding: 30px 90px 60px 20px;
@@ -54,7 +55,7 @@
 }
 
 .map {
-    width: 60%;
+    width: 60.2%;
 
     @include sp {
         width: 100%;

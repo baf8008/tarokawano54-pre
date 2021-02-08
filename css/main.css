@@ -197,7 +197,7 @@ body {
 }
 
 .catch {
-  font-size: 3.8rem;
+  font-size: 4.0rem;
   font-family: 'Hiragino Mincho ProN', 'Yu Mincho';
 }
 
@@ -206,7 +206,7 @@ body {
   margin: 0 auto;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 320px) {
   .wrap {
     width: 90%;
   }
@@ -236,7 +236,7 @@ body {
   margin-left: 2.25rem;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 320px) {
   .title {
     padding-top: 6.0rem;
     font-size: 1.8rem;
@@ -257,7 +257,7 @@ header {
   z-index: 10;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 320px) {
   header {
     background-color: #ffffff;
     padding: 20px 25px;
@@ -274,39 +274,32 @@ header {
   font-size: 3.8rem;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 320px) {
   .header-logo {
     font-size: 2.2rem;
   }
 }
 
 .header-nav {
-  width: 40%;
   line-height: normal;
   letter-spacing: normal;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 320px) {
   .header-nav {
     display: none;
   }
 }
 
 .header-nav ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
-  margin-left: 15px;
   color: #707070;
 }
 
 .header-nav li {
+  margin-left: 20px;
   display: inline-block;
   padding-bottom: 4px;
   position: relative;
@@ -334,7 +327,7 @@ header {
   display: none;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 320px) {
   .ham {
     width: 25px;
     height: 14px;
@@ -361,7 +354,7 @@ header {
 }
 
 .fristview {
-  height: 100vh;
+  height: 800px;
   width: 100%;
   position: relative;
   display: -webkit-box;
@@ -372,17 +365,15 @@ header {
           justify-content: space-between;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 320px) {
   .fristview {
-    display: block;
-    background-image: url(../img/img1.png);
-    background-size: cover;
+    height: 600px;
   }
 }
 
 .fristview-copy {
   position: absolute;
-  top: 50%;
+  top: 40%;
   left: 12.5%;
   height: 25%;
   display: -webkit-box;
@@ -397,7 +388,7 @@ header {
           flex-direction: column;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 320px) {
   .fristview-copy {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -410,15 +401,17 @@ header {
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
     color: #ffffff;
-    top: 50%;
-    left: 25%;
-    height: 15%;
+    z-index: 1;
+    top: 35%;
+    left: 18%;
+    height: 10%;
+    width: 100%;
   }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 320px) {
   .fristview-copy .catch {
-    font-size: 2.0rem;
+    font-size: 2.3rem;
     text-shadow: 5px 1px 9px black;
   }
 }
@@ -426,11 +419,11 @@ header {
 .fristview-copy p {
   font-size: 4.0rem;
   font-family: 'Zapfino', 'Segoe Script';
-  -webkit-transform: translate(-10%, 0);
-          transform: translate(-10%, 0);
+  -webkit-transform: translate(-10%, -90%);
+          transform: translate(-10%, -90%);
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 320px) {
   .fristview-copy p {
     font-size: 2.8rem;
     text-shadow: 5px 1px 9px black;
@@ -439,10 +432,19 @@ header {
 
 .fristview-imge {
   position: relative;
-  left: 50%;
-  width: 50%;
+  left: 47.5%;
+  width: 55%;
   background-image: url(../img/img1.png);
   background-size: cover;
+}
+
+@media screen and (max-width: 320px) {
+  .fristview-imge {
+    display: block;
+    left: 0;
+    width: 100%;
+    height: 600px;
+  }
 }
 
 .concept {
@@ -451,7 +453,7 @@ header {
   background: linear-gradient(180deg, #A193861F 0% 40%, #A1938689 40% 100%);
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 320px) {
   .concept {
     background: -webkit-gradient(linear, left top, left bottom, from(#A193861F), color-stop(75%, #A1938689));
     background: linear-gradient(180deg, #A193861F 0% 25%, #A1938689 75% 100%);
@@ -472,7 +474,7 @@ header {
           flex-direction: column;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 320px) {
   .concept-wrap {
     height: 28%;
   }
@@ -485,31 +487,44 @@ header {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  width: 100%;
 }
 
 .concept-imge .imge-large {
-  width: 60%;
+  width: 64%;
+  height: 410px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 320px) {
   .concept-imge .imge-large {
     width: 50%;
+    height: 205px;
+    -o-object-position: 80% 0%;
+       object-position: 80% 0%;
   }
 }
 
 .concept-imge .imge-small {
   margin-left: 1.0rem;
-  width: 40%;
+  width: 44%;
+  height: 410px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 320px) {
   .concept-imge .imge-small {
     width: 50%;
+    height: 205px;
+    -o-object-position: 100% 0%;
+       object-position: 100% 0%;
   }
 }
 
 .concept-explan {
-  width: 70%;
+  width: 72%;
   margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -520,7 +535,7 @@ header {
   color: #FFFFFF;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 320px) {
   .concept-explan {
     display: block;
     width: 90%;
@@ -532,7 +547,7 @@ header {
   margin-bottom: 120px;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 320px) {
   .concept-explan h3 {
     font-size: 1.8rem;
     margin-top: 50px;
@@ -542,18 +557,20 @@ header {
 }
 
 .concept-explan p {
-  width: 50%;
-  font-size: 1.3rem;
-  line-height: 2;
+  width: 47%;
+  font-size: 1.6rem;
+  line-height: 2.0;
+  letter-spacing: 1.5px;
   margin-top: 70px;
   margin-bottom: 65px;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 320px) {
   .concept-explan p {
     width: 100%;
     margin-top: 0px;
     padding-bottom: 65px;
+    letter-spacing: 2.5px;
   }
 }
 
@@ -567,7 +584,7 @@ header {
           justify-content: space-between;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 320px) {
   .menu-wrap {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -581,7 +598,7 @@ header {
   margin-bottom: 70px;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 320px) {
   .menu-item {
     width: 100%;
   }
@@ -604,7 +621,7 @@ header {
   margin-top: 37px;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 320px) {
   .menu__content__title {
     margin: 30px auto;
     text-align: left;
@@ -612,10 +629,17 @@ header {
 }
 
 .menu__content__info {
-  font-size: 1.4rem;
-  line-height: 2;
+  font-size: 1.6rem;
+  line-height: 2.0;
+  letter-spacing: 2.5px;
   margin-top: 34px;
   text-align: left;
+}
+
+@media screen and (max-width: 320px) {
+  .menu__content__info {
+    letter-spacing: 0.5px;
+  }
 }
 
 .menu__content__price {
@@ -639,7 +663,7 @@ header {
           justify-content: space-between;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 320px) {
   .address {
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
@@ -650,11 +674,12 @@ header {
 
 .address__contener {
   background-color: #D0C5BA;
-  padding: 100px 149px 100px 100px;
+  padding: 100px 209px 100px 100px;
   text-align: left;
+  letter-spacing: 1.0px;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 320px) {
   .address__contener {
     padding: 30px 90px 60px 20px;
   }
@@ -692,10 +717,10 @@ header {
 }
 
 .map {
-  width: 60%;
+  width: 60.2%;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 320px) {
   .map {
     width: 100%;
     height: 230px;
@@ -713,7 +738,7 @@ header {
   margin-top: 160px;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 320px) {
   .footer-wrap {
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
@@ -733,7 +758,7 @@ header {
           justify-content: space-between;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 320px) {
   .store-name {
     margin-bottom: 20px;
   }
@@ -744,7 +769,7 @@ header {
   color: #7070704D;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 320px) {
   .store-name small {
     font-size: 1.8rem;
   }
@@ -755,7 +780,7 @@ header {
   font-size: 2.2rem;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 320px) {
   .store-name .icon {
     padding: 0;
     font-size: 1.9rem;
@@ -772,7 +797,7 @@ header {
   padding: 10px 40px;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 320px) {
   .reserve {
     text-align: center;
     margin: 60px auto;

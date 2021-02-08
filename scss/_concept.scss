@@ -21,25 +21,36 @@
 .concept-imge {
     display: flex;
     justify-content: space-between;
+    width: 100%;
 
     .imge-large {
-        width: 60%;
+        width: 64%;
+        height: 410px;
+        object-fit: cover;
+
         @include sp {
             width: 50%;
+            height: 205px;
+            object-position: 80% 0%;
         }
     }
 
     .imge-small {
         margin-left: 1.0rem;
-        width: 40%;
+        width: 44%;
+        height: 410px;
+        object-fit: cover;
+
         @include sp {
             width: 50%;
+            height: 205px;
+            object-position: 100% 0%;
         }
     }
 }
 
 .concept-explan {
-    width: 70%;
+    width: 72%;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
@@ -53,7 +64,9 @@
     h3 {
         margin-top: 90px;
         margin-bottom: 120px;
-        
+        // line-height: 2.0;
+        // letter-spacing: 2.0;
+
         @include sp {
             font-size: 1.8rem;
             margin-top: 50px;
@@ -63,9 +76,10 @@
     }
 
     p {
-        width: 50%;
-        font-size: 1.3rem;
-        line-height: 2;
+        width: 47%;
+        font-size: 1.6rem;
+        line-height: 2.0;
+        letter-spacing: 1.5px;
         margin-top: 70px;
         margin-bottom: 65px;
 
@@ -73,6 +87,7 @@
             width: 100%;
             margin-top: 0px;
             padding-bottom: 65px;
+            letter-spacing: 2.5px;
         }
     }
 }

@@ -3,7 +3,7 @@
 ///////////////
 
 @mixin sp {
-    @media screen and (max-width: 400px) {
+    @media screen and (max-width: 320px) {
         @content;
     }
 }
@@ -23,7 +23,7 @@ body {
 }
 
 .catch {
-    font-size: 3.8rem;
+    font-size: 4.0rem;
     font-family: 'Hiragino Mincho ProN', 'Yu Mincho';
 }
 
