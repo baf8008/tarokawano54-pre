@@ -14,7 +14,14 @@
     flex-direction: column;
 
     @include sp {
-        height: 28%;
+        height: 30%;
+    }
+}
+
+.concept-wrap>h2 {
+    @include sp {
+        margin-top: 6.0rem;
+        // padding-top: 0;
     }
 }
 
@@ -29,7 +36,7 @@
         object-fit: cover;
 
         @include sp {
-            width: 50%;
+            width: 46%;
             height: 205px;
             object-position: 80% 0%;
         }
@@ -40,11 +47,14 @@
         width: 44%;
         height: 410px;
         object-fit: cover;
+        object-position: 0% 0%;
 
         @include sp {
-            width: 50%;
+            margin-left: 0.7rem;
+            width: 53%;
             height: 205px;
-            object-position: 100% 0%;
+            object-fit: cover;
+            object-position: 85% 0%;
         }
     }
 }
@@ -86,6 +96,7 @@
         @include sp {
             width: 100%;
             margin-top: 0px;
+            margin-bottom: 0px;
             padding-bottom: 65px;
             letter-spacing: 2.5px;
         }

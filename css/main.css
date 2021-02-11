@@ -354,7 +354,7 @@ header {
 }
 
 .fristview {
-  height: 800px;
+  height: 600px;
   width: 100%;
   position: relative;
   display: -webkit-box;
@@ -402,7 +402,7 @@ header {
             flex-direction: column-reverse;
     color: #ffffff;
     z-index: 1;
-    top: 35%;
+    top: 55%;
     left: 18%;
     height: 10%;
     width: 100%;
@@ -440,10 +440,11 @@ header {
 
 @media screen and (max-width: 320px) {
   .fristview-imge {
-    display: block;
+    top: 10%;
     left: 0;
     width: 100%;
     height: 600px;
+    background-position-x: 20%;
   }
 }
 
@@ -476,7 +477,13 @@ header {
 
 @media screen and (max-width: 320px) {
   .concept-wrap {
-    height: 28%;
+    height: 30%;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .concept-wrap > h2 {
+    margin-top: 6.0rem;
   }
 }
 
@@ -499,7 +506,7 @@ header {
 
 @media screen and (max-width: 320px) {
   .concept-imge .imge-large {
-    width: 50%;
+    width: 46%;
     height: 205px;
     -o-object-position: 80% 0%;
        object-position: 80% 0%;
@@ -512,14 +519,19 @@ header {
   height: 410px;
   -o-object-fit: cover;
      object-fit: cover;
+  -o-object-position: 0% 0%;
+     object-position: 0% 0%;
 }
 
 @media screen and (max-width: 320px) {
   .concept-imge .imge-small {
-    width: 50%;
+    margin-left: 0.7rem;
+    width: 53%;
     height: 205px;
-    -o-object-position: 100% 0%;
-       object-position: 100% 0%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: 85% 0%;
+       object-position: 85% 0%;
   }
 }
 
@@ -569,6 +581,7 @@ header {
   .concept-explan p {
     width: 100%;
     margin-top: 0px;
+    margin-bottom: 0px;
     padding-bottom: 65px;
     letter-spacing: 2.5px;
   }
